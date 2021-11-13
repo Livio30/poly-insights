@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-const partySchema = new mongoose.Schema({
+const party = new mongoose.Schema({
   name: { type: String, required: true },
   image: { type: String, required: true },
 });
 
-const partySchema = mongoose.model("parties", partySchema);
+const partySchema = mongoose.model("parties", party);
 
-export default partySchema;
+module.exports = partySchema;
