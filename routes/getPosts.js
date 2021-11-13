@@ -1,4 +1,4 @@
-const BlogPost = require('../models/blogPostSchema.js');
+const BlogPost = require('../model/blogPostSchema.js');
 
 const express = require("express");
 
@@ -16,4 +16,4 @@ router.get("/posts", async (req, res) => {
     }
 });
 
-module.exports = router;
+module.exports = getPosts;
