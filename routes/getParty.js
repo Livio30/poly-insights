@@ -1,4 +1,4 @@
-const Party = require('../models/partySchema.js');
+const Party = require('../model/partySchema.js');
 
 const express = require("express");
 

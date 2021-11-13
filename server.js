@@ -23,7 +23,7 @@ mongoose
   .then(() => console.log('MongoDb Atlas Connected...'))
   .catch((error) => console.log(error.message));
 
-mongoose.set("useFindAndModify", false);
+// mongoose.set("useFindAndModify", false);
 
 app.use("/api", getPosts);
 app.use("/api", getParty);
