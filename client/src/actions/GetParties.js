@@ -14,7 +14,7 @@ import partynames from "../Tempdata/partynames";
   //     console.log(`post data:${data}`);
   //console.log("Sending ");
   //console.log(partynames);
-    console.log(data);
+  //  console.log(data);
       dispatch({ type: GET_PARTIES_SUCCESS, payload: partynames });
     } catch (e) {
       dispatch({ type: GET_PARTIES_FAIL, payload: e.message });
