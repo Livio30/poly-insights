@@ -12,7 +12,7 @@ router.get("/post/:id", async (req, res) => {
         return res.status(200).json({ post });
     }catch (error) {
         console.error(error);
-        return res.status(500).json({ errorMessage: "Posts could not be retrieved" });
+        return res.status(500).json({ message: "Posts could not be retrieved" });
     }
 });
 
