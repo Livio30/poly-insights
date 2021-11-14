@@ -11,10 +11,10 @@ import partynames from "../Tempdata/partynames";
         },
       });
       const data = await res.json();
-  //     console.log(`post data:${data}`);
+      console.log(`post data:${data.PartyList}`);
   // console.log("Sending ");
   // console.log(partynames);
-      dispatch({ type: GET_PARTIES_SUCCESS, payload: data });
+      dispatch({ type: GET_PARTIES_SUCCESS, payload: data.PartyList });
     } catch (e) {
       dispatch({ type: GET_PARTIES_FAIL, payload: e.message });
     }

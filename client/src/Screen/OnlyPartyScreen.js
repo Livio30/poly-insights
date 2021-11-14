@@ -64,11 +64,11 @@ const OnlyPartyScreen = (props) => {
               <>
             
             <BlogCardComp
-              key={e.id}
+              key={e._id}
               name={e.title}
               img={e.img}
               content={e.content}
-              id={e.id}
+              id={e._id}
             />
             </>
           );

@@ -12,7 +12,7 @@ router.get("/party-list", async (req, res) => {
         return res.status(200).json({ PartyList});
     }catch (error) {
         console.error(error);
-        return res.status(500).json({ errorMessage: "Party list could not be retrieved" });
+        return res.status(500).json({ message: "Party list could not be retrieved" });
     }
 });
 
