@@ -25,7 +25,7 @@ const Onlyblog = (props) => {
     <>
       <div className="container userg">
         <h3 className="text text-center userdis">
-          All the blogs by our Bloogers!
+          <u>All the blogs by our Blogers!</u>
         </h3>
       </div>
       <div className="container gallery mt-5 ">

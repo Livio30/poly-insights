@@ -24,16 +24,17 @@ const HomeScreen = () => {
       <div className="row">
         <div className="header">
           <h1 className="text-center">
-            Your complete guide to political parties
+            <u>Your complete guide to political parties</u>
           </h1>
           <h6 className="text-center">
-            Getting to you more about political parties
+            Welcome to our Page!
+            We will guide you to know more about political parties in Goa
           </h6>
         </div>
       </div>
       <div className="row blogcontainer mx-auto mt-5">
         <div className=" topic">
-          <p>Parties Contesting for 2021</p>
+          <p>Parties Contesting for 2021:</p>
         </div>
       </div>
       <div className="container partynames">

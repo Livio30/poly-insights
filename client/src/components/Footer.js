@@ -14,15 +14,14 @@ const Footer = () => {
       <div className="bg-dark text-secondary px-4 py-5 text-center">
         <div className="py-5">
           <h1 className="display-6 fw-bold text-white">
-            A tranding technology
+            Why you should choose us?
           </h1>
           <div className="col-lg-6 mx-auto">
             <p className="fs-5 mb-4">
-              Foods are something which everyone fall for and here is this
-              awesome website displaying various blogs on foods, where foodiez
-              them selves can post the blogs on foods they love.
+            We provide you information which is non-judgemental, based on the facts which will make you clear about your decision to vote for the better future of state of Goa.We take use of the articles,news and interviews posted by the writers on the internet.
+We assure you that our page does not provide hate against other parties.
               <br></br>
-              Website designed by: Adnan Shah Muzavor.
+              Website designed by: Adnan   Livio   Chaitanya   Priya
             </p>
             <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
               <button
