@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose');
 
-const blogSchema = new mongoose.Schema({
+const blog = new mongoose.Schema({
   title: { type: String, required: true },
   category: { type: String, required: true },
   image: { type: String, required: true },
@@ -9,6 +9,6 @@ const blogSchema = new mongoose.Schema({
   reference: { type: String, required: true },
 });
 
-const blogSchema = mongoose.model("blogs", blogSchema);
+const blogSchema = mongoose.model("blogs", blog);
 
-export default blogSchema;
+module.exports = blogSchema;
