@@ -27,7 +27,8 @@
   </ol>
 </details>
 
-<p id="about-the-project">A brief description of what this project does and who it's for</p>
+<p id="about-the-project">Website Displaying information & detail of the political parties of Goa so that a common man gets clear knowledge which political party should he vote
+</p>
 
 # Hello, folks! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
@@ -48,9 +49,8 @@
 
 ## Features
 
-- Search posts
+- View Posts
 - Responsive
-- Fullscreen mode
 - Cross platform
   
 <p id="license"></>
