@@ -13,7 +13,7 @@ const HomeScreen = () => {
   const AllParties = useSelector((e) => e.AllParties);
   const { ploading, AllThePartiess, error } = AllParties;
   useEffect(()=>{
-      console.log("dispatvhed");
+      console.log("dispatched");
   dispatch(getAllBlogs());
   dispatch(getparties());
   },[])

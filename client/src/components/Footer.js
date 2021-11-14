@@ -18,10 +18,8 @@ const Footer = () => {
           </h1>
           <div className="col-lg-6 mx-auto">
             <p className="fs-5 mb-4">
-            We provide you information which is non-judgemental, based on the facts which will make you clear about your decision to vote for the better future of state of Goa.We take use of the articles,news and interviews posted by the writers on the internet.
-We assure you that our page does not provide hate against other parties.
+              A common man who don't have a clear political knowledge might find it difficult to have a clear idea about which is the deserving political party he or she should vote.
               <br></br>
-              Website designed by: Adnan   Livio   Chaitanya   Priya
             </p>
             <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
               <button
@@ -44,10 +42,6 @@ We assure you that our page does not provide hate against other parties.
         </div>
         <div className="simple d-flex justify-content-center align-items-center">
           <p>
-            <font>
-              <font>© 2019--2021 Company, Inc. </font>
-              <font>· </font>
-            </font>
             <a href="https://www.websitepolicies.com/blog/terms-conditions-vs-privacy-policy">
               <font>
                 <font>Privacy</font>

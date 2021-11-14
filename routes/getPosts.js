@@ -12,7 +12,7 @@ router.get("/posts", async (req, res) => {
         return res.status(200).json({ Posts });
     }catch (error) {
         console.error(error);
-        return res.status(500).json({ errorMessage: "Posts could not be retrieved" });
+        return res.status(500).json({ message: "Posts could not be retrieved" });
     }
 });
 

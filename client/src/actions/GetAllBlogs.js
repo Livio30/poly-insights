@@ -11,43 +11,38 @@ import {
 import PartyInfo from "../Tempdata/PartyInfo";
 export const getAllBlogs = () => async (dispatch) => {
   dispatch({ type: ALL_BLOGS_REQUEST });
-  //try {
-  //   const res = await fetch("/getblog", {
-  //     method: "GET",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //   });
-    // const data = await res.json();
-    // console.log(`post data:${data}`);
-  
-  // } catch (e) {
-  //   dispatch({ type: ALL_BLOGS_FAIL, payload: e.message });
-  // }
-  console.log("Getting all");
-  console.log(PartyInfo);
-dispatch({ type: ALL_BLOGS_SUCCESS, payload: PartyInfo });
+  try {
+    const res = await fetch("/api/party-list", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const data = await res.json();
+    console.log(`post data:${data}`);
+    dispatch({ type: ALL_BLOGS_SUCCESS, payload: data });
+  } catch (e) {
+    dispatch({ type: ALL_BLOGS_FAIL, payload: e.message });
+  }
+  // console.log("Getting all");
+  // console.log(PartyInfo);
 };
 
 
 
 export const getABlog = (blogid) => async (dispatch) => {
   dispatch({ type: ALL_BLOG_REQUEST });
- // try {
-  //   const res = await fetch("/getblog", {
-  //     method: "GET",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //   });
-    // const data = await res.json();
-    // console.log(`post data:${data}`);
-    console.log(blogid);
-    PartyInfo.map((e)=>console.log(e.id))
-    const Requested=PartyInfo.filter((e)=>e.id===blogid);
-    console.log(Requested);
-    dispatch({ type: ALL_BLOG_SUCCESS, payload: Requested[0] });
-  //} catch (e) {
-   // dispatch({ type: ALL_BLOG_FAIL, payload: e.message });
- // }
+ try {
+    const res = await fetch(`/api/post/${blogid}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const data = await res.json();
+    console.log(`post data:${data}`);
+    dispatch({ type: ALL_BLOG_SUCCESS, payload: data });
+  } catch (e) {
+   dispatch({ type: ALL_BLOG_FAIL, payload: e.message });
+ }
 };
