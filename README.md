@@ -48,8 +48,8 @@
 
 ## Features
 
-- Light/dark mode toggle
-- Live previews
+- Search posts
+- Responsive
 - Fullscreen mode
 - Cross platform
   
